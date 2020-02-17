@@ -1,0 +1,816 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0;
+}
+/*====== navbar part css ======= */
+
+
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding: 0 15px;
+    transition: all linear .3s
+}
+.navbar{
+    padding-top: 15px; 
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #c7b299;
+}
+/*====== banner part css ======= */
+#banner{
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 380px;
+    padding-bottom: 380px;
+    position: relative;
+    
+}
+#banner::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.69);
+}
+.banner-text-slider{
+    position: relative;
+    z-index: 999;
+}
+.banner-text-item{
+    padding-bottom: 20px;
+}
+.banner-text-item h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.banner-text-item h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 52px;
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: -10px;
+    padding-bottom: 20px;
+}
+.banner-text-item p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #fff;
+    padding-bottom: 50px;
+    
+}
+.banner-text-item a{
+     font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    background: #998675;
+    padding: 20px 35px;
+    
+}
+/*====== banner part css end ======= */
+
+/*====== service part css start ======= */
+#service{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.service-item i{
+    font-size: 45px;
+    padding-bottom: 30px;
+    color: #555;
+    transition: all linear .3s;
+}
+.service-item h3{
+    padding-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #555;
+    transition: all linear .3s;
+}
+.service-item p{
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #8c8c8c;
+}
+.service-item{
+    position: relative;
+}
+.service-item::after{
+    position: absolute;
+    content: '';
+    bottom: -30px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 0px;
+    height: 3px;
+    background: #c7b299;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.service-item:hover i{
+    color: #c7b299;
+}
+.service-item:hover h3{
+    color: #c7b299;
+}
+.service-item:hover::after{
+    opacity: 1;
+    width: 70px;
+}
+/*====== service part css end ======= */
+
+
+
+
+
+/*====== idea part css start ======= */
+#idea{
+    background: #fbfaf8;
+    padding-top: 80px;
+}
+.idea-txt{
+    padding-bottom: 40px;
+}
+.idea-txt h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #555;
+    padding-bottom: 30px;
+}
+.idea-txt p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8c8c8c;
+    line-height: 28px;
+}
+
+/*====== idea part css end ======= */
+
+/*====== theme part css start ======= */
+#theme{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #2f231d;
+}
+.right-txt h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
+}
+.right-txt span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #c7b299;
+}
+.right-txt p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #615855;
+}
+.theme-btn a{
+    padding: 20px 28px;
+    background: #998675;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border-bottom: 3px solid #736357;
+}
+.theme-btn{
+    margin-left: 150px;
+    margin-top: 10px;
+}
+    
+/*====== theme part css end ======= */
+
+
+/*====== project part css start ======= */
+#project{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.project-text{
+    padding-bottom: 40px;
+}
+.project-button button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #8c8c8c;
+    padding: 10px 17px;
+    background: transparent;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    margin: 0 5px;
+    transition: all linear .3s;
+    cursor: pointer;
+    
+}
+.project-button button:hover{
+    background: #998675;
+    color: #fff;
+}
+.project-button{
+    margin-top: -25px;
+    padding-bottom: 40px;
+}
+.project-item-txt{
+    background: #fbfaf8;
+    padding: 30px 15px;
+    position: relative;
+    transition: all linear .3s;
+}
+.project-item-txt::after{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    top: -15px;
+    left: 20px;
+    background: #fbfaf8;
+    transform: rotate(45deg);
+    transition: all linear .3s;
+}
+.project-item-txt h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #c7b299;
+    transition: all linear .3s;
+}
+.project-item-txt p{
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #d1d1d1;
+    transition: all linear .3s;
+}
+.project-img{
+    position: relative;
+    
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.70);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.overlay i{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+}
+.project-item{
+    margin-bottom: 30px;
+}
+.project-item:hover .overlay{
+    opacity: 1;
+    
+}
+.project-item:hover .overlay{
+    opacity: 1;
+    
+}
+.project-item:hover .project-item-txt{
+    background: #362f2d;
+    
+}
+.project-item:hover .project-item-txt h3{
+    color: #ebebeb;
+    
+}
+.project-item:hover .project-item-txt p{
+    color: #c7b299;
+    
+}
+.project-item:hover .project-item-txt::after{
+    background: #362f2d;
+}
+.project-button .mixitup-control-active{
+    background: #998675;
+    color: #fff
+}
+.btnn a{
+    padding: 20px 44px;
+}
+/*====== project part css end ======= */
+
+
+
+
+
+
+
+
+
+/*====== Video part css start ======= */
+#video{
+    background: url(../images/video-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 210px;
+    padding-bottom: 250px;
+    position: relative;
+    
+}
+#video::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.52);
+}
+.video-text{
+    position: relative;
+    z-index: 999;
+}
+.video-text h3, .video-text p{
+    color: #fff;
+}
+.video-text i{
+    color: #fff;
+    font-size: 70px;
+    height: 100px;
+    width: 100px;
+    background: rgba(0, 0, 0, 0.21);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+}
+/*====== Video part css end ======= */
+
+/*====== mobile part css start ======= */
+.mobile-img{
+    padding-top: 80px;
+}
+.mobile-txt{
+   margin-left: 50px; 
+}
+.mobile-text{
+    padding-top: 190px;
+}
+.mobile-text h3{
+   font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #555; 
+}
+.mobile-text p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8c8c8c;
+    line-height: 28px;
+    padding-top: 25px;
+}
+.mobile-text-point{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.mobile-text-point p{
+    
+     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8c8c8c;
+}
+.mobile-text-point i{
+    margin-right: 30px;
+    width: 20px;
+    height: 20px;
+    background: #c7b299;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+/*====== mobile part css end ======= */
+
+/*====== counter part css start ======= */
+#counter{
+    background-image: linear-gradient(to right, #211b19, #4e3427); 
+    padding-top: 70px;
+    padding-bottom: 60px;
+    
+    
+}
+.counter-item h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 48px;
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+.counter-item p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #c7b299;
+    text-transform: uppercase;
+    position: relative;
+}
+.counter-item p::after{
+    position: absolute;
+    content: '';
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background: #fff;
+}
+
+/*====== counter part css end ======= */
+
+
+/*====== post part css start ======= */
+#post{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.post-text{
+    padding-bottom: 40px;
+}
+
+.post-card{
+    border: 1px solid #f8f8f8;
+}
+.top{
+    background: #363636;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    
+}
+.bottom{
+    background: #252525;
+     color: #fff;
+    text-align: center;
+    
+}
+.date{
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+}
+
+
+
+
+
+
+.post-txt{
+    background: #fbfaf8;
+    padding: 30px 15px;
+    position: relative;
+    transition: all linear .3s;
+}
+.post-txt h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #c7b299;
+    transition: all linear .3s;
+}
+.post-txt p{
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #d1d1d1;
+    transition: all linear .3s;
+}
+.post-txt i{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.post-txt a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #c7b299;
+    transition: all linear .3s;
+}
+.post-img{
+    position: relative;
+    
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.70);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.overlay i{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+}
+.post-item{
+    margin-bottom: 30px;
+}
+.post-item:hover .overlay{
+    opacity: 1;
+    
+}
+
+.post-item:hover .post-txt{
+    background: #362f2d;
+    
+}
+.post-item:hover .post-txt h3{
+    color: #ebebeb;
+    
+}
+.post-item:hover .post-txt p{
+    color: #c7b299;
+    
+}
+.post-item:hover .top{
+    background: #c7b299;
+}
+.post-item:hover .bottom{
+    background: #a48d72;
+}
+.slick-center .post-item .post-txt{
+    background: #362f2d;
+}
+.slick-center .post-item .overlay{
+     opacity: 1;
+}
+.slick-center .date .top{
+    background: #c7b299;
+}
+.slick-center .date .bottom{
+    background: #a48d72;
+}
+/*====== post part css end ======= */
+
+
+/*====== client part css start ======= */
+#client{
+    background: url(../images/client.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    position: relative;
+}
+#client::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.63);
+}
+.client-logo{
+    position: relative;
+    z-index: 9999;
+}
+/*====== client part css end ======= */
+
+/*====== last part part css start ======= */
+
+#last-part{
+    background: #191919;
+     padding-top: 80px;
+    padding-bottom: 140px;
+}
+.woxam p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #555;
+    padding-top: 25px;
+}
+.woxam a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #d1d1d1;
+    
+}
+.woxam i{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.recent-post{
+    padding-top: 40px;
+}
+.recent-post h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    padding-bottom: 25px;
+
+} 
+.recent-post h6{
+   font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #363636; 
+    padding-bottom: 10px;
+}
+.recent-post p{
+   font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #555;  
+}
+
+.abc{
+    border-bottom: 1px solid red;
+    padding-top: 20px;
+}
+.abc:last-child{
+    border-bottom: none;
+}
+.abc:hover p{
+    color: #c7b299;
+}
+.abc:hover h6{
+    color: #fff;
+}
+.ddd{
+    border-bottom: 1px solid red;
+    padding-top: 20px;
+}
+.ddd:last-child{
+    border-bottom: none;
+}
+.widget{
+  font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff; 
+    padding-bottom: 30px;
+}
+.w{
+    margin: 15px 0;
+}
+.wwe{
+    padding-top: 40px;
+}
+
+
+/*====== last part part css end ======= */
+
+
+
+
+
+/*====== footer part css start ======= */
+#footer{
+    background: #111111;
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+.footer1 h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #555555; 
+}
+.footer1 span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #959595; 
+}
+.footer1 b{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #c7b299; 
+}
+.footer2{
+    margin-left: 20px;
+}
+.footer2 p{
+     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #323232; 
+    
+}
+.footer2 span{
+     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #959595; 
+    
+}
+/*====== footer part css end ======= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
